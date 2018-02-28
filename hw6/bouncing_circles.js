@@ -22,8 +22,8 @@ function setup() {
       xd: random(-2, 2),
       yd: random(-2, 2),
       c: color(random(360), 60, 100),
-			r: random(5,15),
-			isDead: 0  //gives these circles mortality for some reason
+      r: random(5,15),
+      isDead: 0  //gives these circles mortality for some reason
     }
   }
 }
@@ -55,16 +55,15 @@ function draw() {
 			background(255);
 
     }
-		if(circle.r < 1 && circle.isDead == 0)	//get rid of those circles
-		{
-				circle.r = 0;
-				circle.x =width/2;
-				circle.y= height/2;
-				circle.xd = 0;
-				circle.yd = 0;
-				circle.isDead = 1;
-				background(0);  //to mourn the death of a circle (at least for that frame/until another circle creeps closer to death)
-
-			}
+    if(circle.r < 1 && circle.isDead == 0)	//get rid of those circles
+    {
+	circle.r = 0;
+	circle.x =width/2;
+	circle.y= height/2;
+	circle.xd = 0;
+	circle.yd = 0;
+	circle.isDead = 1;
+	background(0);  //to mourn the death of a circle (at least for that frame/until another circle creeps closer to death)
+    }
   }
 }

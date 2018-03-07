@@ -1,5 +1,5 @@
 /*
- * almost a heartbea
+ * almost a heartbeat
  */
 
 void setup() {
